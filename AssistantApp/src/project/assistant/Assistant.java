@@ -25,7 +25,9 @@ import project.assistant.app.Action;
 import project.assistant.app.App;
 import project.assistant.app.Displayable;
 import project.assistant.app.Response;
+import project.assistant.app.fact.FactApp;
 import project.assistant.app.time.TimeApp;
+import project.assistant.app.todo.ToDoApp;
 import project.assistant.app.weather.WeatherApp;
 
 /**
@@ -179,7 +181,7 @@ public class Assistant extends Application {
   
   private static App[] getAvailableApps(){
     // TODO: add more apps avilable to the Virtual Assistant here
-    return new App[]{new WeatherApp(), new TimeApp()};
+    return new App[]{new WeatherApp(), new TimeApp(), new FactApp(), new ToDoApp()};
   }
 }
 
