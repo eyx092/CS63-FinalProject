@@ -10,6 +10,6 @@ public class FactApp extends App{
 
   @Override
   public List<Action> getActions() {
-    return Arrays.asList(new GetDefinitionFact());
+    return Arrays.asList(new GetFactAction());
   }
 }
