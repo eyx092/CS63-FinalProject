@@ -16,7 +16,8 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListCell;
 import javafx.scene.control.ListView;
-import javafx.scene.control.TextField; import javafx.scene.layout.BorderPane;
+import javafx.scene.control.TextField; 
+import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.Priority;
 import javafx.stage.Stage;
@@ -26,6 +27,7 @@ import project.assistant.app.App;
 import project.assistant.app.Displayable;
 import project.assistant.app.Response;
 import project.assistant.app.fact.FactApp;
+import project.assistant.app.mail.MailApp;
 import project.assistant.app.time.TimeApp;
 import project.assistant.app.todo.ToDoApp;
 import project.assistant.app.weather.WeatherApp;
@@ -181,7 +183,7 @@ public class Assistant extends Application {
   
   private static App[] getAvailableApps(){
     // TODO: add more apps avilable to the Virtual Assistant here
-    return new App[]{new WeatherApp(), new TimeApp(), new FactApp(), new ToDoApp()};
+    return new App[]{new WeatherApp(), new TimeApp(), new FactApp(), new ToDoApp(), new MailApp()};
   }
 }
 

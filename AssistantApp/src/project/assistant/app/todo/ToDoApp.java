@@ -9,6 +9,6 @@ import project.assistant.app.App;
 public class ToDoApp extends App{
 	@Override
 	public List<Action> getActions(){
-		return Arrays.asList(new GetToDoAction());
+		return Arrays.asList(new ToDoAction());
 	}
 }
